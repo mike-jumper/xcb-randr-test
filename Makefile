@@ -17,6 +17,11 @@
 # under the License.
 #
 
+all: test
+
+clean:
+	$(RM) test
+
 test: test.c
-	gcc test.c -lxcb -o test
+	$(CC) test.c -lxcb -o test
 
